@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="397.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PocetnaController">
+   <center>
+      <TableView fx:id="tabelaDogadjaja" minWidth="-Infinity" prefHeight="241.0" prefWidth="524.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="kolonaNaziv" editable="false" prefWidth="75.0" sortable="false" text="Naziv" />
+          <TableColumn fx:id="kolonaDatumPocetka" editable="false" prefWidth="106.0" sortable="false" text="Datum početka" />
+            <TableColumn fx:id="kolonaVrijemePocetka" editable="false" prefWidth="75.0" sortable="false" text="Vrijeme početka" />
+            <TableColumn fx:id="kolonaVrijemeZavrsetka" editable="false" prefWidth="75.0" sortable="false" text="Vrijeme završetka" />
+        </columns>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <top>
+      <Label alignment="CENTER" text="Događaji" textFill="#171717" BorderPane.alignment="TOP_CENTER">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </Label>
+   </top>
+   <right>
+      <VBox prefHeight="321.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="NoviDogadjaj_btn" mnemonicParsing="false" prefHeight="33.0" prefWidth="152.0" text="Kreiraj događaj">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="Obrisi_btn" mnemonicParsing="false" prefHeight="33.0" prefWidth="152.0" text="Obriši događaj">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="Marketing_btn" mnemonicParsing="false" prefHeight="33.0" text="Pokreni marketing">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="Korisnici_btn" layoutX="10.0" layoutY="53.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="152.0" text="Korisnici">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <MenuButton fx:id="Preuzimanja_mbtn" mnemonicParsing="false" prefHeight="33.0" prefWidth="152.0" text="Preuzmi">
+              <items>
+                <MenuItem fx:id="PreuzmiDogadjaj_mi" mnemonicParsing="false" text="Događaj" />
+                  <MenuItem fx:id="PreuzmiOrganizatore_mi" mnemonicParsing="false" text="Organizatore" />
+                <MenuItem fx:id="PreuzmiUcesnike_mi" mnemonicParsing="false" text="Učesnike" />
+              </items>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </MenuButton>
+            <TextField fx:id="marketing_textF" visible="false" />
+         </children>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+   <bottom>
+      <Button fx:id="Zavrsi_btn" mnemonicParsing="false" prefHeight="33.0" prefWidth="119.0" text="Završi" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </bottom>
+</BorderPane>

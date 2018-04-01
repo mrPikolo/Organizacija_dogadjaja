@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NoviDogadjajController">
+   <bottom>
+      <Button fx:id="Kreiraj_btn" mnemonicParsing="false" text="Kreiraj" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </bottom>
+   <center>
+      <Pane BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_LEFT" layoutY="63.0" prefHeight="21.0" prefWidth="161.0" text="Vrsta">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="nazivDogadjaja" layoutX="509.0" layoutY="61.0" prefHeight="25.0" prefWidth="194.0" />
+            <Label alignment="TOP_LEFT" layoutY="106.0" prefHeight="21.0" prefWidth="161.0" text="Datum početka">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <DatePicker fx:id="datumPocetka" layoutX="162.0" layoutY="104.0" prefHeight="25.0" prefWidth="194.0" />
+            <Label alignment="TOP_LEFT" layoutY="149.0" prefHeight="21.0" prefWidth="161.0" text="Vrijeme početka">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="355.0" layoutY="149.0" prefHeight="21.0" prefWidth="145.0" text="Vrijeme završetka">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutY="192.0" prefHeight="21.0" prefWidth="161.0" text="Organizator">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <ComboBox fx:id="organizatori_ComboBox" layoutX="162.0" layoutY="190.0" prefHeight="25.0" prefWidth="193.0" />
+            <TextField fx:id="vrijemePocetka" layoutX="162.0" layoutY="147.0" prefHeight="25.0" prefWidth="194.0">
+               <tooltip>
+                  <Tooltip text="vrijeme unesite u obliku:   HH:MM:SS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip></TextField>
+            <TextField fx:id="vrijemeZavrsetka" layoutX="509.0" layoutY="147.0" prefHeight="25.0" prefWidth="194.0">
+               <tooltip>
+                  <Tooltip text="vrijeme unesite u obliku:   HH:MM:SS">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip></TextField>
+            <Label alignment="TOP_LEFT" layoutY="236.0" prefHeight="21.0" prefWidth="161.0" text="Učesnik">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <ComboBox fx:id="ucesnici_ComboBox" layoutX="161.0" layoutY="234.0" prefHeight="25.0" prefWidth="193.0" />
+            <Label alignment="TOP_LEFT" layoutX="361.0" layoutY="63.0" prefHeight="21.0" prefWidth="145.0" text="Naziv">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="356.0" layoutY="192.0" prefHeight="21.0" prefWidth="161.0" text="Opis">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <TextArea fx:id="opis_textArea" layoutX="373.0" layoutY="236.0" prefHeight="78.0" prefWidth="334.0" />
+            <ComboBox fx:id="vrstaDogadjaja_ComboBox" layoutX="161.0" layoutY="61.0" prefHeight="25.0" prefWidth="193.0">
+               <cursor>
+                  <Cursor fx:constant="S_RESIZE" />
+               </cursor>
+            </ComboBox>
+            <Label alignment="TOP_LEFT" layoutY="280.0" prefHeight="21.0" prefWidth="161.0" text="Predavač">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <ComboBox fx:id="predavaci_ComboBox" layoutX="161.0" layoutY="278.0" prefHeight="25.0" prefWidth="193.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </Pane>
+   </center>
+</BorderPane>
